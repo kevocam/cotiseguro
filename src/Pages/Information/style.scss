@@ -1,0 +1,68 @@
+@import '../../globalStyle.scss';
+
+.addParents{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    &__base{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    &__content{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 100%;
+        padding:5% 10%;
+        &--main{
+            padding:20px;
+            max-width: 450px;
+            &_head{
+                h2{
+                    @include titlePrincipal;
+                }
+                p{
+                    margin:12px 0px 35px 0px;
+                    @include subTitle;
+                }
+                h3{
+                    @include subTitle(1.8rem);
+                    margin:12px 0px 12px 0px;
+
+                }
+            }
+            &_main{
+                Input{
+                    margin:4px 0px;
+                }
+                h3{
+                    @include subTitle(1.8rem);
+                    margin:8px 0px;
+                }
+                p{
+                    color:$colorSecundary;
+                    margin:4px 0px;
+                    input{
+                        color: green;    
+                    }
+                    label{
+                        margin-left: 8px;    
+                        font-size: 1.4rem;
+                        
+                    }
+                }
+                &-button{
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                
+
+            }
+
+        }
+        
+        
+    }
+}

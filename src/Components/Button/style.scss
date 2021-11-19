@@ -1,0 +1,17 @@
+@import '../../globalStyle.scss';
+
+.buttonCustom{                 
+    font-size: 1.3rem;
+    text-align: center;                
+    background-color: $colorPrimary;
+    color:whitesmoke;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 6px;
+    max-width: 160px;
+    padding: 16px 28px;
+    font-weight: 600;
+    &:hover{
+        cursor: pointer;
+    }
+}  

@@ -1,0 +1,25 @@
+@import '../../globalStyle.scss';
+.base{
+    min-width:400px;
+    min-height: 500px;    
+    background-image: url('../../img/Base.png');      
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;    
+    position: relative;
+    &__illustration{
+        position: absolute;
+        right:-90px;
+    }
+    /* &__illustration{
+        position: absolute;
+        bottom:5px;
+        background-image: url('../../img/Illustration-1.png');      
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+        
+
+    } */
+}
+

@@ -1,0 +1,59 @@
+$colorPrimary: #2F80ED;
+$colorSecundary: #58595d;
+$colorSuccess:#83cc5e;
+$black:rgb(8, 8, 8);
+$bold:600;
+$ligth:300;
+$fontPrimary:'Lato', sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  html{
+    font-size:62.5%;
+    font-family: "Lato", sans-serif;
+  }
+  
+
+@mixin baseImg {    
+    background-image: url('../img/Base.png');        
+    background-repeat: no-repeat;
+    background-size: contain;    
+}
+@mixin titlePrincipal ($size:2.8rem){    
+        font-size: $size;    
+        font-weight: $ligth;
+        margin:0px;    
+        color:$colorSecundary;
+        span{            
+            font-weight: $bold;
+            color:$colorPrimary;
+        }   
+    
+}
+@mixin subTitle($size:1.6rem, $weight:$ligth){
+    font-size: $size;
+    font-weight: $weight;
+    color:$colorSecundary;
+}
+
+.buttonCustom{                 
+  font-size: 1.3rem;
+  text-align: center;                
+  background-color: $colorPrimary;
+  color:whitesmoke;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+  max-width: 160px;
+  padding: 16px 28px;
+  font-weight: 600;
+  &:hover{
+      cursor: pointer;
+  }
+  &:disabled{
+    background-color: $colorSecundary;
+
+  }
+}  

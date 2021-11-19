@@ -1,0 +1,93 @@
+@import '../../globalStyle.scss';
+
+.card{
+    width: 100%;
+    background-color:#f0f2fa;
+    border-radius: 12px;
+    padding: 4px;
+    &__title{
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        height: 38px;
+        text-align: center;
+        @include subTitle();        
+    }
+    &__content{
+        background-color: white;        
+        border-radius: 2px;
+        width: 100%;        
+        &--hero{
+            display: flex;
+            justify-content: space-between;
+            padding: 24px;
+            max-height: 160px;
+            &_info{
+                width: 60%;
+                border-right: 0.5px solid #f0f2fa;
+                &-title{
+                    @include subTitle(1.6rem,$black);        
+                }
+                &-mount{
+                    @include subTitle(2.4rem,$bold);
+                    margin:8px 0px;
+                }
+                &-badge{
+                    &_item{                        
+                        color:white;
+                        background-color: $colorSuccess;
+                        min-width: 70px;
+                        max-width:90px;
+                        text-align: center;
+                        border-radius: 12px;
+                        padding:2px;                    
+                    }
+                }
+            }
+            &_img{
+                width: 40%;
+                padding:20px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                
+            }
+        }
+        &--line{
+            max-width: 80%;
+            border:1px solid #f0f2fa;
+            margin:0 auto;
+            
+        }
+        &--details{
+            width: 100%;
+            padding:20px;
+            ul{
+                list-style: none;
+                li{
+                    font-size: 2.1rem;
+                    color:$colorSecundary;                    
+                    margin:24px 0px;
+                    span{
+                        margin-right: 16px;
+                        font-size: 1.6rem;
+
+                    }
+                    em{
+                        font-style: normal;
+                        font-size: 1.6rem;
+                        color:$colorSecundary;
+                        font-weight: $ligth;
+                    }
+                }                                
+            }
+        }        
+    }
+}
+.basic{
+    filter: grayscale(1);
+}
+.all{
+    filter: grayscale(0);
+}

@@ -1,0 +1,76 @@
+@import '../../globalStyle.scss';
+
+
+.choisePlan{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    &__base{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    &__content{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 100%;
+        padding:5% 10%;
+        &--main{
+            padding:20px;
+            max-width: 500px;
+            &_head{
+                h2{
+                    @include titlePrincipal;
+                }
+                p{
+                    margin:12px 0px 35px 0px;
+                    @include subTitle;
+                }                
+            }
+            &_hero{                
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;   
+                grid-gap: 16px;
+            }
+            &_card{
+                margin:48px 0px;
+            }
+            &_footer{
+                h3{
+                    @include titlePrincipal(1.8rem);
+                    max-width: 190px;
+                }
+                ul{
+                    margin-top:20px;
+                    list-style: none;
+                    @include subTitle(1.4rem, $bold);
+                    li{
+                        height: 50px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        color:#a6a9b4;
+                        border-top: 1px solid #a6a9b4;
+                        
+                    }
+                }
+            }
+            &_button{                
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                a{
+                    text-decoration: none;                        
+                    color:  #a6a9b4;
+                    font-size: 1.8rem;
+                    margin-right: 8px;
+                }
+            }
+
+        }
+        
+        
+    }
+}

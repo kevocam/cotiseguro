@@ -1,0 +1,29 @@
+@import '../../globalStyle.scss';
+
+.step{
+    height: 25px;  
+    display: flex;  
+    align-items: center;
+    justify-content: flex-start;    
+    &__icon{
+        border:2px solid $colorPrimary;
+        border-radius:50%;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__content{
+        margin-left: 8px;
+        font-weight: $bold;
+        font-size: 1.2rem;
+        color:$colorSecundary;
+        span{
+            color:$colorPrimary;
+        }
+    }
+}

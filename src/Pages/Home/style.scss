@@ -1,0 +1,56 @@
+@import '../../globalStyle.scss';
+
+.containerLogin{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    grid-template-rows: 1fr 0.1fr;   
+    
+    &__advice{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    &__form{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        place-self: center;
+        max-width: 300px;
+        &--item{
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            TextField{
+                width: 100% !important;
+            }
+            &--doc{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &--title{
+            h2{
+                @include titlePrincipal;
+            }
+            p{
+                font-size: 1.6rem;
+                margin: 8px 0 8px 0;
+                color:$colorSecundary;
+            }
+        }
+    }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+  .inputCustom{
+    width: 100% !important;
+  }
+  
